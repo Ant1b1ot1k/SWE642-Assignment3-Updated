@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513
-
 // This file defines a RESTful web service endpoint in Java using Spring framework, which handles HTTP requests to get a list of all surveys and add new survey data
 // to the database. The Survey class defines a database entity with fields representing survey data columns in the database table.
 

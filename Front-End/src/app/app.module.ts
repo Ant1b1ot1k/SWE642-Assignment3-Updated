@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513  
-
 // The code defines an Angular module called AppModule. It declares all the components that will be used in the app, imports necessary modules, and defines the root component for 
 // this module. This module is then exported so that other parts of the app can import it.
 

@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513
-
 // This file contains a Java interface named SurveyRepository which extends the JpaRepository interface, and it provides standard CRUD methods for working with Survey entities.
 // This file is used to define the behavior of a repository component that interacts with a database to retrieve and manipulate survey data.
 

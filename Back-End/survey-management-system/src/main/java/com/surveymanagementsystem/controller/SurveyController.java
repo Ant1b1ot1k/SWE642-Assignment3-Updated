@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513
-
 // This file defines a RESTful web service endpoint for a survey management system with two HTTP requests: a GET request to /survey/getAllSurveys to return a list of
 // all surveys and a POST request to /survey/addSurvey to add new survey data to the database. It also enables Cross-Origin Resource Sharing for an Angular app.
 

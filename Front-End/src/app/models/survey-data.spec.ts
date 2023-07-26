@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513  
-
 //This file contains the unit tests for the survey-data model. Created by default when creating a new model class
 
 // Import the SurveyData class from the './survey-data' module

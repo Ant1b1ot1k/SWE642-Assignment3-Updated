@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513  
-
 // This code defines the routes for the application using Angular's RouterModule and Routes modules, and exports the AppRoutingModule module. 
 // The routes are defined for the HomeComponent, SurveyComponent, and ListComponent.
 

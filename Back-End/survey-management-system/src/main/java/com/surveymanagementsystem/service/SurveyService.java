@@ -1,9 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513
-
-
 // This file defines a Java class named SurveyService, which is a service component that interacts with the SurveyRepository to retrieve and add survey data to the database.
 // It contains methods to retrieve all surveys and add a new survey, and it uses the @Service annotation to indicate that the class is a service component.
 

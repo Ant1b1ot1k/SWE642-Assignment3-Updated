@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513  
-
 // This is an Angular component that defines a form for a survey, including checkboxes for different survey options. 
 // It uses an instance of SurveydataService to save the form data and then navigates to the survey list component.
 

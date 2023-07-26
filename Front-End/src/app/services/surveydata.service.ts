@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513  
-
 // This code defines an Angular service named SurveydataService that uses HttpClient to send HTTP GET and POST requests to a server to retrieve and store survey data, respectively. 
 // The getFormData() method returns an observable of SurveyData array by making a GET request to the specified URL, while the saveFormData() method accepts a SurveyData object 
 // as an argument and returns an observable of the same type by sending a POST request to another specified URL.

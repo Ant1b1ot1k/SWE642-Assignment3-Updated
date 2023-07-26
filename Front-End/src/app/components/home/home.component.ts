@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513  
-
 // This code defines the HomeComponent class in an Angular application, which implements the OnInit interface. 
 // It also defines metadata for the component, including the HTML template location and CSS style files. 
 // The constructor function is empty, and the ngOnInit() lifecycle hook is implemented but does not have any functionality.

@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513  
-
 // This code defines an Angular component called "ListComponent" which initializes an empty array to hold survey data and subscribes to the observable returned by a service 
 // called "SurveydataService". The service makes an HTTP GET request to retrieve survey data from a server, and when the data is returned, 
 // it is assigned to the surveydata array in the component.

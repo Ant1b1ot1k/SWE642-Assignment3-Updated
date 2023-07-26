@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513  
-
 // This file defines an Angular component named AppComponent, which has a metadata object that specifies the HTML template and CSS stylesheet files to be used for the component. 
 // It also defines a public property title that can be bound to in the template.
 

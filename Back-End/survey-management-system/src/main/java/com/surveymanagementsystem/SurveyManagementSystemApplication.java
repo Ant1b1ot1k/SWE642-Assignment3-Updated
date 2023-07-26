@@ -1,8 +1,3 @@
-// Prabath Reddy Sagili Venkata - G01393364
-// Anjali Maddila - G01381846
-// Vishnu Neduncheliyan - G01393742
-// Kannan Mrithunjai Venkateswaran - G01351513
-
 // The SurveyManagementSystemApplication class is the main class of the application and contains the main method that starts the Spring Boot application
 // by running SpringApplication.run() method.
 

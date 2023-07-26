@@ -1,0 +1,242 @@
+<!--   
+  Prabath Reddy Sagili Venkata - G01393364
+  Anjali Maddila - G01381846
+  Vishnu Neduncheliyan - G01393742
+  Kannan Mrithunjai Venkateswaran - G01351513   
+-->
+
+<!-- 
+    This is an HTML document that includes a navbar, header, footer, and a form. 
+    The navbar includes links to a survey form, and survey details.
+    The header includes links to the home, survey form, and survey details.
+    The body section is a survey form that collects the information of the user.
+    The footer includes the George Mason University logo.
+-->
+<head>
+<title>Campus Visit Survey | George Mason University</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Stylesheet from w3schools and bootstrap cdn links -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+      <a href="/home" class="w3-bar-item w3-button"><b>Home</b></a>
+      <div class="w3-center">
+        <a routerLink="/survey" class="w3-bar-item w3-button">Student Survey</a>
+        <a routerLink="/survey-list" class="w3-bar-item w3-button">List All Surveys</a>
+      </div>
+    </div>
+</div>
+  
+<body>
+    <br><br><br><br>
+    <!-- Heading of the survey page -->
+    <div class="box">
+        <h1>CS DEPARTMENT CAMPUS VISIT SURVEY</h1><br>
+        <h3> GEORGE MASON UNIVERSITY </h3>
+    </div>
+    <br>
+    <div class="top">
+        <h3>Please fill the form below</h3>
+    </div>
+    <br>
+
+    <div class="container">
+        <!-- Autocomplete ="on" to enable autocomplete across the form. -->
+        <!-- Uses ngForm directive to enable form functionality in Angular. -->
+        <!-- When the form is submitted, the saveData() method will be called. -->
+        <!-- ngNativeValidate enables browser-based validation of form input fields. -->
+        <form #submitDetails="ngForm" autocomplete="on" (ngSubmit)="saveData()" ngNativeValidate>
+
+            <!-- Get the First Name using a text box. This is a required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="fname"><b>First Name: </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="fname" autofocus="autofocus" name="fname" [(ngModel)]="formData.firstName" placeholder="First name" [required]="true">
+                </div>
+            </div>
+
+            <!-- Get the Last Name using a text box. This is a required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="lname"><b>Last Name: </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="lname" autofocus="autofocus" name="lname" [(ngModel)]="formData.lastName" placeholder="Last name" [required]="true">
+                </div>
+            </div>
+
+            <!-- Get the street using a text box. This is a required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="address"><b>Street Address: </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="address" name="address" placeholder="Street Address/House Number" [(ngModel)]="formData.address" [required]="true">
+                </div>
+            </div>
+
+            <!-- Get the city using a text box. This is a required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="city"><b>City: </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="city" name="city" [(ngModel)]="formData.city" required>
+                </div>
+            </div>
+
+            <!-- Get the state using a text box. This is a required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="state"><b>State: </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="state" name="state" [(ngModel)]="formData.state" required>
+                </div>
+            </div>
+            
+            <!-- Get the zip code using a text box that follows a pattern (only numbers can be entered). This is a required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="zip"><b>Zip: </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="text" id="zip" name="zip" pattern="[0-9]{5}" placeholder="E.g. 22030" [(ngModel)]="formData.zip" required>
+                </div>
+            </div>
+
+            <!-- Get the phone number using a input box of type phone number following a specific pattern
+                (123-456-7890). This is a required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="phnumber"><b>Contact Number: </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="tel" id="phnumber" name="number" placeholder="1234567890" [(ngModel)]="formData.phoneNumber" required>
+
+                </div>
+            </div>
+
+            <!-- Get the email address using a input box of type email. It follows a specific pattern by default
+                because of the email type. This is a required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="email"><b>E-mail ID: </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="email" id="email" name="email" placeholder="abc@xyz.com" [(ngModel)]="formData.emailId" required>
+                </div>
+            </div>
+
+            <!-- Get the date of the survey using the date type field. This is a required field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="date"><b>Date of survey: </b> <span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <input type="date" id="date" name="date" [(ngModel)]="formData.surveyDate" required>
+                </div>
+            </div>
+
+            <!-- Displays multiple checkboxes allowing the user to choose or not choose. Not a required Field -->
+            <!-- Uses ngFor from angular to display a list of checkboxes -->
+            <div class="row">
+                <label for="liking"><b>What did you like the most about the campus ? </b></label>
+                <div *ngFor="let checkbox of checkboxesDataList">
+                <b> <input type="checkbox" name="liking" id="liking" [(ngModel)]="checkbox.isChecked">{{checkbox.label}} </b> 
+                </div>
+            </div>
+
+            <!-- Displays multiple radio buttons to allow the user to select exactly one option. Required Field -->
+            <div class="row">
+                <div class="col-30">
+                    <label><b>How did you get to know about the University ?</b><span class="required"></span></label>
+                </div>
+                <div class="col-70"><b>
+                    <input type="radio" id="friends" name="interest" value="friends" [(ngModel)]="formData.platform" required>
+                    <label for="friends">Friends</label>
+                    <input type="radio" id="telivision" name="interest" value="telivision" [(ngModel)]="formData.platform" required>
+                    <label for="telivision">Telivision</label>
+                    <input type="radio" id="internet" name="interest" value="internet" [(ngModel)]="formData.platform" required>
+                    <label for="internet">Internet</label>
+                    <input type="radio" id="other" name="interest" value="other" [(ngModel)]="formData.platform" required>
+                    <label for="other">Other</label> </b>
+                </div>
+            </div>
+
+            <!-- Displays a drop down list of 3 options. Defaulted to "Very Likely". Not a required field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="likelihood"><b>Would you recommend this University to others? </b><span class="required"></span></label>
+                </div>
+                <div class="col-70">
+                    <select id="likelihood" name="likelihood" [(ngModel)]="formData.recommend" required>
+                        <option value="Very Likely">Very Likely</option>
+                        <option value="likely">Likely</option>
+                        <option value="unlikely">Unlikely</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Multi-line text input control to collect the comments from the user. This is not a required field -->
+            <div class="row">
+                <div class="col-30">
+                    <label for="comments"><b>Additional comments: </b></label>
+                </div>
+                <div class="col-70">
+                    <textarea id="comments" name="comments" style="height:100px" [(ngModel)]="formData.comments"></textarea>
+                </div>
+            
+            <br>
+
+            <!-- Submit button and Cancel button created using bootstrap classes -->
+            <!-- Cancel button resets the form -->
+            <!-- Submit button refreshes the page but the previously entered values can be accessed by 
+                navigating back or can also be seen via the autocomplete feature -->
+            <p>
+                <b><button type="submit" class="btn btn-success" value="submit">Submit</button></b>
+                <b><input class="btn btn-primary" type="reset" value="Reset"></b>
+            </p>  
+            </div>
+        </form>
+    </div>
+
+    <b><span style="color:red"><sup>*</sup></span>  means required </b>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center w3-container w3-teal w3-center w3-margin-top w3-black">
+        <div class="w3-container" id="cont">
+            <div class="w3-content" style="max-width:700px">
+                <p>Follow us on social media as well   </p>
+                    <a href="https://www.linkedin.com/school/george-mason-university/" target="_blank">
+                        <i class="fa fa-linkedin w3-hover-opacity"></i></a> &nbsp;
+                    <a href="https://www.instagram.com/georgemasonu/?hl=en" target="_blank">
+                        <i class="fa fa-instagram w3-hover-opacity"></i></a>&nbsp;
+                    <a href="https://www.snapchat.com/add/georgemasonu" target="_blank">
+                        <i class="fa fa-snapchat w3-hover-opacity"></i></a>&nbsp;
+                    <a href="https://twitter.com/georgemasonu" target="_blank">
+                        <i class="fa fa-twitter w3-hover-opacity"></i></a>&nbsp;
+                    <a href="https://www.facebook.com/georgemason" target="_blank">
+                        <i class="fa fa-facebook w3-hover-opacity"></i></a>&nbsp;
+                    <a href="https://www.youtube.com/user/masonWeb" target="_blank">
+                        <i class="fa fa-youtube w3-hover-opacity"></i></a>
+            
+                <!-- End of footer -->
+                <div  class="w3-container">
+                    <a href="https://www2.gmu.edu/" target="_blank">
+                    <img src="/assets/images/gm.jpg" alt="GMU Logo" style="position:fixed;right:0;bottom:0;width:70px;height:70px;"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<router-outlet></router-outlet>

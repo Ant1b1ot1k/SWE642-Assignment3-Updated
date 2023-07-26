@@ -1,0 +1,18 @@
+/* 
+    Prabath Reddy Sagili Venkata - G01393364
+    Anjali Maddila - G01381846
+    Vishnu Neduncheliyan - G01393742
+    Kannan Mrithunjai Venkateswaran - G01351513 
+*/
+
+/* CSS File to style the homepage  */
+
+/* Set the background color of the body to Azure */
+body {
+    background-color: Azure;
+}
+
+/* Set the text color of all elements with the ID "s" to blue */
+#s {
+    color: blue;
+}

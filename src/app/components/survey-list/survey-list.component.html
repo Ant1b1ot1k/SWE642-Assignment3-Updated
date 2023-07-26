@@ -1,0 +1,90 @@
+<!--   
+  Prabath Reddy Sagili Venkata - G01393364
+  Anjali Maddila - G01381846
+  Vishnu Neduncheliyan - G01393742
+  Kannan Mrithunjai Venkateswaran - G01351513   
+-->
+
+<!-- 
+    This code is an HTML template for a survey details page. It displays a table of survey responses, each row containing various details of the response. 
+    The page also has a navigation bar with links to the home page, the survey form, and a list of all survey responses.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import w3.css style sheet from w3schools.com -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- create a w3-bar with black background and wide padding -->
+    <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+        <!-- create a button with Home label -->
+        <a href="/home" class="w3-bar-item w3-button"><b>Home</b></a>
+        <div class="w3-center">
+            <!-- create a button with Survey Form label that routes to /survey -->
+            <a routerLink="/survey" class="w3-bar-item w3-button">Student Survey</a>
+             <!-- create a button with Survey details label that routes to /survey-list -->
+            <a routerLink="/survey-list" class="w3-bar-item w3-button">List All Surveys</a>
+        </div>
+    </div>
+</div>
+
+<br>
+<!-- Box with the heading of the survey details -->
+<div class="box">
+    <h1>CAMPUS VISIT SURVEY DETAILS</h1><br>
+    <h3> GEORGE MASON UNIVERSITY </h3>
+</div>
+
+<br><br>
+
+<!-- Table to show survey details -->
+<div class="list-table">
+    <!-- create a table with a bordered, hoverable secondary border -->
+    <table class="table table-bordered table-hover border-secondary">
+        <!-- Thead section contains the header row for the table. -->
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Street Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Contact</th>
+            <th>Email ID</th>
+            <th>Date of Survey</th>
+            <th>Most liked about GMU</th>
+            <th>How did they hear</th>
+            <th>Recommendation level</th>
+            <th>Comments</th>
+        </tr>
+    </thead>
+        <!-- tbody section contains the rows for the table. -->
+        <tbody>
+            <!-- This loop generates a row for each survey response in the surveydata array. -->
+            <tr class="table-dark" *ngFor="let user of surveydata">
+                <td>{{user.id}}</td>
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.address}}</td>
+                <td>{{user.city}}</td>
+                <td>{{user.state}}</td>
+                <td>{{user.zip}}</td>
+                <td>{{user.phoneNumber}}</td>
+                <td>{{user.emailId}}</td>
+                <td>{{user.surveyDate}}</td>
+                <td>{{user.checkboxValues}}</td>
+                <td>{{user.platform}}</td>
+                <td>{{user.recommend}}</td>
+                <td>{{user.comments}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

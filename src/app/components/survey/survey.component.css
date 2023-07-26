@@ -1,0 +1,98 @@
+/* 
+  Prabath Reddy Sagili Venkata - G01393364
+  Anjali Maddila - G01381846
+  Vishnu Neduncheliyan - G01393742
+  Kannan Mrithunjai Venkateswaran - G01351513  
+*/
+
+/* CSS File to style the survey page  */
+
+/* Styles for the submit button element */
+input[type=submit] {
+  background-color: #29e432; /* Background color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Padding */
+  border: none; /* Border */
+  border-radius: 4px; /* Border radius */
+  cursor: pointer; /* Cursor on hover */
+  float: right; /* Float to the right of the parent element */
+}
+
+/* Styles for all elements in the document */
+* {
+  box-sizing: border-box; /* All elements include border and padding in width and height */
+}
+
+/* Styles for text input, select, and textarea elements */
+input[type=text], select, textarea {
+  width: 100%; /* Width of the element */
+  padding: 12px; /* Padding */
+  border: 1px solid #1d0303; /* Border */
+  border-radius: 4px; /* Border radius */
+  resize: vertical; /* Resize direction */
+}
+
+/* Styles for the body element */
+body {
+  background-color:Azure; /* Background color */
+}
+
+/* Styles for the label element */
+label {
+  padding: 12px 12px 12px 0; /* Padding */
+  display: inline-block; /* Display as inline block */
+}
+
+/* Styles for the reset button element */
+input[type=reset] {
+  background-color: #1c7d9d; /* Background color */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Padding */
+  border: none; /* Border */
+  border-radius: 4px; /* Border radius */
+  cursor: pointer; /* Cursor on hover */
+  float: right; /* Float to the right of the parent element */
+}
+
+/* Styles for the submit button element when hovered over */
+input[type=submit]:hover {
+  background-color: #02ff0e; /* Background color */
+}
+
+/* Styles for the reset button element when hovered over */
+input[type=reset]:hover {
+  background-color: #158dd3; /* Background color */
+}
+
+/* Styles for elements with class 'required' */
+.required:after{
+  content:"*"; /* Content displayed after the element */
+  color:red; /* Text color */
+}
+
+/* Styles for elements with class 'box' */
+.box {
+  width: 1400px; /* Width of the element */
+  height: 5x; /* Height of the element */
+  background-color: #006633; /* Background color */
+  border: 5px solid #FFCC33; /* Border */
+  padding: 20px; /* Padding */
+  margin: 20px; /* Margin */
+  color:white; /* Text color */
+  box-shadow: 5px 5px 5px rgba(10, 0, 0, 0.3); /* Box shadow */
+  font-family:Lucida Console; /* Font family */
+  margin:auto; /* Margin set to auto */
+  text-align: center; /* Text alignment */
+}
+
+/* Styles for elements with class 'top' */
+.top {
+  text-align: center; /* Text alignment */
+}
+
+/* Styles for elements with class 'row' */
+.row:after {
+  content: ""; /* Content */
+  display: table; /* Display as table */
+  clear: both; /* Clear the float property */
+}

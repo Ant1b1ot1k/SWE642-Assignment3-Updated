@@ -1,0 +1,102 @@
+<!-- 
+  Prabath Reddy Sagili Venkata - G01393364
+  Anjali Maddila - G01381846
+  Vishnu Neduncheliyan - G01393742
+  Kannan Mrithunjai Venkateswaran - G01351513  
+-->
+<!-- 
+  This is an HTML document that includes a navbar, header, footer, and some text content. 
+  The navbar includes links to a survey form, survey details, and contact information.
+  The header includes an image and links to the survey form and survey details.
+  The text content talks about the Department of Computer Science at George Mason University and their world-class faculty and research.
+  The footer includes social media icons and the George Mason University logo.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>SWE 642 Assignment - 3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheet from w3schools and bootstrap cdn links -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  </head>
+  <body>
+
+    <!-- Navbar (sit on top) -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+        <a href="/home" class="w3-bar-item w3-button"><b>Home</b></a>
+        <div class="w3-center">
+          <a routerLink="/survey" class="w3-bar-item w3-button">Student Survey</a>
+          <a routerLink="/survey-list" class="w3-bar-item w3-button">List All Surveys</a>
+          <a href="#details" class="w3-bar-item w3-button">Contact</a>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br><br>
+    <b>
+    <div class="col-sm-12 text-justify" > 
+      <!-- Styling the content using the span tag -->
+            <span style="color:green">Welcome to the Department of Computer Science at George Mason University! </span>
+            <p>With nearly 80 full-time faculty members, the CS Department at Mason is the largest department in the <span style="color:green"><u style="text-decoration-style: dotted">College of Engineering and Computing</u></span>, one of the largest departments on campus, and the largest, fastest growing, and highest ranked Computer Science department in the Commonwealth of Virginia.     
+      </p>
+      <p>Several members of the faculty are actively engaged in <span style="color:green"><u style="text-decoration-style: dotted">inter-disciplinary research collaborations</u></span> with colleagues from all over campus and other universities.Our faculty include three ACM Fellows and five IEEE Fellows.Indeed inter-disciplinary collaboration in research and education is a key component of our departmental vision and strategic direction for the future.</p>
+      <p> The department has a <span style="color:green"><u style="text-decoration-style: dotted"> world-class faculty </u></span> with research strengths in all areas of computing, and a strong commitment to teaching.  Nearly half of our faculty were recruited in the past three years, and we now<b> rank among the Top 40 Computer Science Departments in the US.</b></p>
+            <hr> 
+    </div>
+
+    </b>
+
+    <!-- Header -->
+      <img class="w3-image" src="/assets/images/g.jpg" width="1500" height="800">
+      <div class="w3-display-middle w3-margin-top w3-center">
+        <h2>
+            <div class="w3-padding w3-black w3-opacity-min">
+                <p>
+                <a routerLink = "/survey">Student Survey</a>
+                </p>
+            </div>
+            <br>
+            <div class="w3-padding w3-black w3-opacity-min">
+              <p>              
+                <a routerLink = "/survey-list">List All Surveys</a>
+              </p>
+          </div>
+        </h2>
+      </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center w3-container w3-teal w3-center w3-margin-top w3-black">
+      <div class="w3-container" id="details">
+        <div class="w3-content" style="max-width:700px">
+          <p>Follow us on social media as well   </p>
+          <a href="https://www.linkedin.com/school/george-mason-university/" target="_blank">
+            <i class="fa fa-linkedin w3-hover-opacity"></i></a> &nbsp;
+          <a href="https://www.instagram.com/georgemasonu/?hl=en" target="_blank">
+            <i class="fa fa-instagram w3-hover-opacity"></i></a>&nbsp;
+          <a href="https://www.snapchat.com/add/georgemasonu" target="_blank">
+            <i class="fa fa-snapchat w3-hover-opacity"></i></a>&nbsp;
+          <a href="https://twitter.com/georgemasonu" target="_blank">
+            <i class="fa fa-twitter w3-hover-opacity"></i></a>&nbsp;
+          <a href="https://www.facebook.com/georgemason" target="_blank">
+            <i class="fa fa-facebook w3-hover-opacity"></i></a>&nbsp;
+          <a href="https://www.youtube.com/user/masonWeb" target="_blank">
+            <i class="fa fa-youtube w3-hover-opacity"></i></a>
+
+          <!-- End of footer -->
+          <div  class="w3-container">
+          <a href="https://www2.gmu.edu/" target="_blank">
+            <img src="/assets/images/gm.jpg" alt="GMU Logo" style="position:fixed;right:0;bottom:0;width:80px;height:53px;"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

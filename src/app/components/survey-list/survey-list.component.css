@@ -1,0 +1,72 @@
+/* 
+  Prabath Reddy Sagili Venkata - G01393364
+  Anjali Maddila - G01381846
+  Vishnu Neduncheliyan - G01393742
+  Kannan Mrithunjai Venkateswaran - G01351513  
+*/
+
+/* CSS File to style the survey list page  */
+
+/* This class defines the styles for the container with class 'box' */
+.box {
+    /* Defines the width of the container */
+    width: 1400px;
+    /* Defines the height of the container */
+    height: 5x;
+    /* Defines the background color of the container */
+    background-color: #006633;
+    /* Defines the border of the container */
+    border: 5px solid #FFCC33;
+    /* Defines the padding within the container */
+    padding: 20px;
+    /* Defines the margin of the container */
+    margin: 20px;
+    /* Defines the text color of the container */
+    color:white;
+    /* Adds shadow to the container */
+    box-shadow: 5px 5px 5px rgba(10, 0, 0, 0.3);
+    /* Defines the font family of the text */
+    font-family:Lucida Console;
+    /* Centers the container horizontally */
+    margin:auto;
+    /* Centers the text within the container */
+    text-align: center;
+}
+
+/* This class defines the styles for the table element */
+table { 
+    /* Defines the width of the table */
+    width: 100%;
+    /* Centers the content of the table cells */
+    text-align: center;
+    /* Defines the border of the table */
+    border: 2px solid #FFCC33;
+}
+
+/* This class defines the styles for the table rows and cells */
+th, td, tr {
+    /* Defines the border of the cells and rows */
+    border: 3px solid #FFCC33;
+    /* Defines the height of the cells */
+    height: 20px;
+    /* Defines the padding within the cells */
+    padding: 5px;
+    /* Centers the content of the cells horizontally */
+    text-align: center;
+    /* Centers the content of the cells vertically */
+    justify-content: center;
+}
+
+/* This selector applies the styles to even table rows */
+tr:nth-child(even) { 
+    /* Defines the background color of the even rows */
+    background-color: #f2f2f2;
+} 
+
+/* This class defines the styles for table headers */
+th {
+    /* Defines the background color of the table headers */
+    background-color: #5e279e;
+    /* Defines the text color of the table headers */
+    color: white;
+}  
